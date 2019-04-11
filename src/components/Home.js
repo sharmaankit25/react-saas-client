@@ -36,6 +36,11 @@ class Home extends Component {
     render(){
         return (
             <div>
+                <h3>Enter School</h3>
+                <form>
+                <input type="text" placeholder="Enter url"/>
+                <button>Submit</button>
+                </form>
                 <h3>Login</h3>
                 <form onSubmit={e => this.login(e)}>
                     Username : <input type="text" value={this.state.username} onChange={(e)=>this.setState({username:e.target.value})} />
